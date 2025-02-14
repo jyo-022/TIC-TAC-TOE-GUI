@@ -1,4 +1,4 @@
-import tkinter #tk-interface (graphical user interface library)
+import tkinter 
 
 def set_tile(row, column):
     global curr_player
@@ -65,10 +65,10 @@ def check_winner():
         game_over = True
         return
     
-    #tie
+    #draw
     if (turns == 9):
         game_over = True
-        label.config(text="Tie!", foreground=color_yellow)
+        label.config(text="Draw!", foreground=color_yellow)
 
 
 def new_game():
